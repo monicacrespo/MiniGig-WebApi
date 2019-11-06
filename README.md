@@ -30,7 +30,7 @@ Here's the URI Design
 | api/gigs?page=1&pageSize=4| Get 4 Items** | Error			| Error			| Error			   |
 
 ** The result will be sorted (OrderByDescending) by gig's date before its paged it.
-   That's because page 2 of a list of items sorted by ID is much different than page 2 of a list of items sorted by Date.
+   That's because page 2 of a list of items sorted by Id is much different than page 2 of a list of items sorted by Date.
 
 
 | Resource  				    | GET (read)	| POST (insert)	  | PUT (update)	    | DELETE (delete)	    |
@@ -42,16 +42,45 @@ Here's the URI Design
 ** Error Status Code (405 Method Not Allowed)
 
 *** For pagination, both page and pagesize in the query string need to be greater than zero.
-http://.../api/gigs?page=0&pageSize=4 will return the same result as http://.../api/gigs, the list sorted (OrderBy) by ID.
+http://.../api/gigs?page=0&pageSize=4 will return the same result as http://.../api/gigs, the list sorted (OrderBy) by Id.
 
-How to test your GET Request With Postman
-![PostmanGetGig](https://github.com/monicacrespo/MiniGig-WebApi//tree/master/MiniGigWebApi/Images/PostmanGetGig.JPG)
+
+
+How to test your GET Gig Request With Postman
+
+![PostmanGetGig](https://github.com/monicacrespo/MiniGig_WebApi/blob/master/MiniGigWebApi/Images/PostmanGetGig.JPG)
+
+
+GET Gigs Request 
+
+![PostmanGetGigs](https://github.com/monicacrespo/MiniGig_WebApi/blob/master/MiniGigWebApi/Images/PostmanGetGigs.JPG)
+
+
+GET the First Page with Four Gigs Request
+
+![PostmanGetGig](https://github.com/monicacrespo/MiniGig_WebApi/blob/master/MiniGigWebApi/Images/PostmanGetPagedGigs.JPG)
+
+
+POST Request to Create a Gig 
+
+![PostmanGetPagedGigs](https://github.com/monicacrespo/MiniGig_WebApi/blob/master/MiniGigWebApi/Images/PostmanCreateGig.JPG)
+
+
+DELETE Gig Request
+
+![PostmanDeleteGig](https://github.com/monicacrespo/MiniGig_WebApi/blob/master/MiniGigWebApi/Images/PostmanDeleteGig.JPG)
+
+We can see that the Gig with Id 18 has been deleted by trying to request that gig 
+
+![PostmanGetGigNotFound](https://github.com/monicacrespo/MiniGig_WebApi/blob/master/MiniGigWebApi/Images/PostmanGetGigNotFound.JPG)
+
+
 
 # Getting Started
 To run the sample locally from Visual Studio:
-* Build the solution.
+* Build the solution
 * Open the Package Manager Console (Tools > NuGet Package Manager > Package Manager Console)
 * Select the MiniGigWebApi.Data as Default Project
 * Enter the following command: Update-Database –Verbose
-* Press F5 to debug.
+* Press F5 to debug
 
