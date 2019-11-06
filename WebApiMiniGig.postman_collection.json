@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "b2056bce-5859-41af-97b6-65affefc39c1",
+		"name": "WebApiMiniGig",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Update Gig",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Id\": 3,\r\n    \"Name\": \"Ed Sheeran\",\r\n    \"GigDate\": \"2019-11-03T00:00:00\",\r\n    \"MusicGenreId\": \"3\"\r\n}"
+				},
+				"url": {
+					"raw": "{{MiniGigEnv}}/Api/Gigs/3",
+					"host": [
+						"{{MiniGigEnv}}"
+					],
+					"path": [
+						"Api",
+						"Gigs",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Gig Error Status Code 405",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Id\": 3,\r\n    \"Name\": \"Ed Sheeran\",\r\n    \"GigDate\": \"2019-11-03T00:00:00\",\r\n    \"MusicGenreId\": \"3\"\r\n}"
+				},
+				"url": {
+					"raw": "{{MiniGigEnv}}/Api/Gigs",
+					"host": [
+						"{{MiniGigEnv}}"
+					],
+					"path": [
+						"Api",
+						"Gigs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Gig",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{MiniGigEnv}}/Api/Gigs/1",
+					"host": [
+						"{{MiniGigEnv}}"
+					],
+					"path": [
+						"Api",
+						"Gigs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Paging Gig Collection",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:2002/Api/Gigs?page=1&pageSize=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2002",
+					"path": [
+						"Api",
+						"Gigs"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Gigs Collection",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{MiniGigEnv}}/Api/Gigs",
+					"host": [
+						"{{MiniGigEnv}}"
+					],
+					"path": [
+						"Api",
+						"Gigs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Gig",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"disabled": false
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": 0,\n    \"Name\": \"Test Postman New Gig\",\n    \"GigDate\": \"2019-11-03T00:00:00\",\n    \"MusicGenreId\": 4\n}"
+				},
+				"url": {
+					"raw": "{{MiniGigEnv}}/Api/Gigs",
+					"host": [
+						"{{MiniGigEnv}}"
+					],
+					"path": [
+						"Api",
+						"Gigs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Gig Error Status Code 405",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{MiniGigEnv}}/Api/Gigs/111",
+					"host": [
+						"{{MiniGigEnv}}"
+					],
+					"path": [
+						"Api",
+						"Gigs",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Gig",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{MiniGigEnv}}/Api/Gigs/16",
+					"host": [
+						"{{MiniGigEnv}}"
+					],
+					"path": [
+						"Api",
+						"Gigs",
+						"16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Gig Error Status Code 405",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{MiniGigEnv}}/Api/Gigs",
+					"host": [
+						"{{MiniGigEnv}}"
+					],
+					"path": [
+						"Api",
+						"Gigs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

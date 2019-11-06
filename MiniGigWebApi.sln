@@ -1,0 +1,49 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniGigWebApi", "MiniGigWebApi\MiniGigWebApi.csproj", "{BB63EF67-9EDE-457B-8EE0-BD3826EC07C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniGigWebApi.Data", "MiniGigWebApi.Data\MiniGigWebApi.Data.csproj", "{4214BF0B-DF82-4F79-8754-F7B31E7013E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniGigWebApi.Domain", "MiniGigWebApi.Domain\MiniGigWebApi.Domain.csproj", "{D026FFBA-3427-45BE-B9DF-A18DC71F3741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniGigWebApi.Services", "MiniGigWebApi.Services\MiniGigWebApi.Services.csproj", "{7B812595-EE1B-43FC-80A0-6472B593A075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniGigWebApi.SharedKernel.Data", "SharedKernel.Data\MiniGigWebApi.SharedKernel.Data.csproj", "{22242F01-7051-47E2-862C-9CC9FE00694E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB63EF67-9EDE-457B-8EE0-BD3826EC07C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB63EF67-9EDE-457B-8EE0-BD3826EC07C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB63EF67-9EDE-457B-8EE0-BD3826EC07C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB63EF67-9EDE-457B-8EE0-BD3826EC07C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4214BF0B-DF82-4F79-8754-F7B31E7013E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4214BF0B-DF82-4F79-8754-F7B31E7013E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4214BF0B-DF82-4F79-8754-F7B31E7013E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4214BF0B-DF82-4F79-8754-F7B31E7013E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D026FFBA-3427-45BE-B9DF-A18DC71F3741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D026FFBA-3427-45BE-B9DF-A18DC71F3741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D026FFBA-3427-45BE-B9DF-A18DC71F3741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D026FFBA-3427-45BE-B9DF-A18DC71F3741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B812595-EE1B-43FC-80A0-6472B593A075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B812595-EE1B-43FC-80A0-6472B593A075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B812595-EE1B-43FC-80A0-6472B593A075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B812595-EE1B-43FC-80A0-6472B593A075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22242F01-7051-47E2-862C-9CC9FE00694E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22242F01-7051-47E2-862C-9CC9FE00694E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22242F01-7051-47E2-862C-9CC9FE00694E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22242F01-7051-47E2-862C-9CC9FE00694E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44F88330-5B72-423C-B376-B057B5A41DD3}
+	EndGlobalSection
+EndGlobal
